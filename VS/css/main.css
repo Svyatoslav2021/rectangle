@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow: hidden;
+ /* background: rgb(71,121,63);
+  background: radial-gradient(circle, rgba(71,121,63,1) 17%, rgba(36,77,59,1) 49%, rgba(25,55,42,1) 100%); */
+}
+
+.owl-item {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-prev,
+.owl-next {
+  display: inline-block;
+}
+.owl-next {
+  float: right;
+}
+.slider-counter {
+  text-align: center;
+}
+
+/*===================main page=======================*/
+.main__page{
+  display: flex;
+  flex-direction: column;
+}
+
+.main__page--title h3{
+  font-family: "Century Gothic";
+  font-weight: lighter;
+  margin-bottom: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*table*/
+table{
+  box-shadow: 0px 0px 25px rgba(0,0,0,.5);
+  border-collapse: collapse;
+  position: relative;
+}
+/*table thead tr th:nth-child(2), table tbody tr:nth-child(1) td:nth-child(1), table tbody tr:nth-child(2) td:nth-child(2){
+  background: #333;
+}*/
+table:after{
+  padding: 18px;
+  line-height: 10px;
+  display: block;
+  font-size: 9px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999999;
+  box-shadow: inset 0 0 10px #333333;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+table:after:hover{
+  width: 50px;
+}
+table th, table td{
+    padding: 90px;
+    background: #222;
+}
+
+.table__description--container{
+  background: rebeccapurple;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.table__description{
+  position: absolute;
+  width: 100%;
+}
+.table__description h1{
+  font-family: "Century Gothic";
+  font-size: 45px;
+  letter-spacing: 8px;
+  font-weight: lighter;
+  position: relative;
+  line-height: 40px;
+}
+.table__description h5{
+  float: right;
+  font-family: "Century Gothic";
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 7px;
+  margin-right: 53px;
+}
